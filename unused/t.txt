@@ -1,0 +1,16 @@
+This research provides a Recursive Trust Labeling approach for identifying fraudulent medical websites. 
+Recursive trust labeling (RTL) is an adaptive learning technique that improves the identification of fraudulent medical websites 
+by combining a recursive labeling mechanism with graph-based classifiers and underlying content. 
+To train and assess their RTL system, 1,000 phony and 1,000 genuine medical websites made up the dataset. 
+Two steps were taken in the training of the RTL algorithm. First, based on the textual content of the websites, 
+a content classifier was trained to detect phony medical websites. Using the link structure as a guide, 
+a graph-based classifier was trained to detect phony medical websites in the second step.
+A graph-based classifier and a content classifier are the two primary parts of the RTL algorithm. 
+A supervised learning model called the content classifier makes use of several features that are taken 
+from a website's textual content to determine if the website is authentic or fraudulent. The graph-based 
+The classifier is an unsupervised learning algorithm that predicts whether a website is authentic or fraudulent based on its contact structure.
+Recursively classifying webpages according to their content and link structure is how the RTL algorithm 
+operates. Initially, a limited group of seed websites are classified as either authentic or fraudulent by
+the algorithm. Subsequently, it labels its neighbors based on the content and link structure of the seed websites.
+Until all of the websites in the dataset have been tagged, the algorithm keeps labeling websites recursively. 
+On the test dataset consisting of phony and authentic medical websites, the RTL algorithm attained a 94% accuracy rate [22].
